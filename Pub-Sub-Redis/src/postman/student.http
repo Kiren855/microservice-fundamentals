@@ -1,0 +1,31 @@
+@url_dev = http://localhost:3303/api/v1/
+
+
+get {{url_dev}}students
+Content-Type: application/json
+
+
+post {{url_dev}}students
+Content-Type: application/json
+
+{
+    "name": "Nguyễn Văn E",
+    "msv": 20000003,
+    "gender": "male",
+    "phone": 8923766445,
+    "CPA": 2.1
+}
+
+patch {{url_dev}}students/6638932c1b39e35105219aa6
+Content-Type: application/json
+
+{
+    "name": "Nguyễn Văn E",
+    "msv": 20000003,
+    "gender": "male",
+    "phone": 8923766445,
+    "CPA": 2.1
+}
+
+delete {{url_dev}}students/6638932c1b39e35105219aa6
+Content-Type: application/json
